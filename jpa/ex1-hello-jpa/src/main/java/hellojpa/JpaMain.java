@@ -17,8 +17,9 @@ public class JpaMain {
         try {
             // 
             Member member = em.find(Member.class, 150L);
-            member.setName("C");
-
+            member.setName("준영속상태테스트");
+            em.detach(member);
+            System.out.println("===============");
             tx.commit();
         } catch (Exception e) {
             tx.rollback();
