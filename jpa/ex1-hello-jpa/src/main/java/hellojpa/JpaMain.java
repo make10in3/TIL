@@ -14,10 +14,12 @@ public class JpaMain {
         tx.begin();
 
         try {
-            Member member = new Member();
-            member.setId(3L);
-            member.setName("HelloC");
-            em.persist(member);
+            Member findMember = em.find(Member.class, 2L);
+            System.out.println("findMember.id = " + findMember.getId()); // findMember.id = 2
+            System.out.println("findMember.name = " + findMember.getName()); // findMember.name = HelloA
+            findMember.setName("HelloB");
+            // persist() 저장안해도 따로 안해도 된다
+            System.out.println("findMember.name = " + findMember.getName()); // findMember.name = HelloB
             tx.commit();
         } catch (Exception e) {
             tx.rollback();
