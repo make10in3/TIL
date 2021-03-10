@@ -20,7 +20,7 @@ public class JpaMain {
             Member findMember1 = em.find(Member.class, 101L);
             Member findMember2 = em.find(Member.class, 101L); //-> 쿼리문 안날림, 영속성 컨텍스트에서 찾음
 
-            System.out.println(a == b);
+            System.out.println(findMember1 == findMember2); // true
 
             tx.commit();
         } catch (Exception e) {
