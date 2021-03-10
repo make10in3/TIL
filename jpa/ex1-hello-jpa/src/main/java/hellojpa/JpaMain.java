@@ -16,19 +16,11 @@ public class JpaMain {
 
         try {
 
-            // 비영속
-            Member member = new Member();
-            member.setId(101L);
-            member.setName("HelloA");
-
             // 영속
-            System.out.println("===BEFORE===");
-            em.persist(member); // -> 1차캐시 저장
-            System.out.println("===AFTER===");
+            Member findMember1 = em.find(Member.class, 101L);
+            Member findMember2 = em.find(Member.class, 101L); //-> 쿼리문 안날림, 영속성 컨텍스트에서 찾음
 
-            Member findMember = em.find(Member.class, 101L); // -> 1차캐시에 저장한 것을 읽어옴, select 문 안나옴
-            System.out.println(findMember.getId());
-            System.out.println(findMember.getName());
+            System.out.println(a == b);
 
             tx.commit();
         } catch (Exception e) {
