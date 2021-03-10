@@ -4,6 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import java.util.List;
 
 public class JpaMain {
     public static void main(String[] args) {
@@ -14,12 +15,13 @@ public class JpaMain {
         tx.begin();
 
         try {
-            Member findMember = em.find(Member.class, 2L);
-            System.out.println("findMember.id = " + findMember.getId()); // findMember.id = 2
-            System.out.println("findMember.name = " + findMember.getName()); // findMember.name = HelloA
-            findMember.setName("HelloB");
-            // persist() 저장안해도 따로 안해도 된다
-            System.out.println("findMember.name = " + findMember.getName()); // findMember.name = HelloB
+            List<Member> result = em.createQuery("select m from Member as m", Member.class)
+                    .getResultList();
+
+            for (Member member : result) {
+                System.out.println("member.name = " + member.getName());
+            }
+
             tx.commit();
         } catch (Exception e) {
             tx.rollback();
