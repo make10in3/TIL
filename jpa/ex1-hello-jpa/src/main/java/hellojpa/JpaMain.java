@@ -25,11 +25,21 @@ public class JpaMain {
             member.setTeam(team); //1
             em.persist(member);
 
-            team.getMembers().add(member); //2
+            //team.getMembers().add(member); //2
 
-            em.flush();
-            em.clear();
+            //em.flush();
+            //em.clear();
 
+            // em.flush() 와 em.clear() 를 안하면 1차 캐시에서 데이터를 가져오는데
+            // 순수한 객체 상태이기 때문에 아직 컬렉션도 없는 상태라서 값이 저장이 안되어 있다
+            
+            Team findTeam = em.find(Team.class, team.getId()); // 1차 캐시
+            List<Member> members = findTeam.getMembers();
+            System.out.println("==================");
+            for (Member m : members) {
+                System.out.println("m = "+ m.getUsername());
+            }
+            System.out.println("==================");
             tx.commit();
         } catch (Exception e) {
             tx.rollback();
