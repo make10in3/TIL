@@ -15,31 +15,15 @@ public class JpaMain {
         tx.begin();
 
         try {
-            Team team = new Team();
-            team.setName("TEAM A");
-            em.persist(team);
-
+            // 연관 관계의 주인에 값을 입력하지 않음
             Member member = new Member();
             member.setUsername("member1");
-            member.setTeam(team);
             em.persist(member);
 
-            Member findMember = em.find(Member.class, member.getId());
-            Team findTeam = findMember.getTeam();
-
-            System.out.println(findTeam.getName());
-
-            // 새로운 팀으로 설정하고 싶을 때
-            Team newTeam = em.find(Team.class, 100L);
-            findMember.setTeam(newTeam);
-
-
-            // 양방향 연관 관계 설정
-            List<Member> members = findMember.getTeam().getMembers();
-
-            for (Member m: members){
-                System.out.println("m = " + m.getUsername());
-            }
+            Team team = new Team();
+            team.setName("TEAM A");
+            team.getMembers().add(member);
+            em.persist(team);
 
 
             tx.commit();
