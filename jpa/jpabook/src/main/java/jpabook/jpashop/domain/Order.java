@@ -2,6 +2,8 @@ package jpabook.jpashop.domain;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="ORDERS") // 디비에 예약어로 order 가 들어가 있어서
@@ -14,6 +16,11 @@ public class Order {
     @ManyToOne
     @JoinColumn(name="MEMBER_ID")
     private Member member;
+
+    // 비즈니스적으로 의미 있음, 많이 사용함.
+    @OneToMany(mappedBy = "order")
+    private List<OrderItem> orderItems = new ArrayList<>();
+
 
     private LocalDateTime orderDate;
     @Enumerated(EnumType.STRING)
@@ -49,5 +56,10 @@ public class Order {
 
     public void setStatus(OrderStatus status) {
         this.status = status;
+    }
+
+    public void addOrderItem(OrderItem orderItem) {
+        orderItem.setOrder(this);
+        orderItems.add(orderItem);
     }
 }

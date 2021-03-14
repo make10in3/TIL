@@ -1,6 +1,8 @@
 package jpabook.jpashop.domain;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Member {
@@ -13,6 +15,11 @@ public class Member {
     private String city;
     private String street;
     private String zipcode;
+
+    // 회원 정보에는 회원 정보만 있으면 된다.
+    // 설계 시 회원이 장 정보를 굳이 가지고 있지 않아도 된다.
+    @OneToMany(mappedBy = "member")
+    private List<Order> orders = new ArrayList<>();
 
     public Long getId() {
         return id;
