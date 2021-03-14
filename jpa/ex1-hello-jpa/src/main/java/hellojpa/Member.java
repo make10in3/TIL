@@ -49,4 +49,13 @@ public class Member {
     public void setTeam(Team team) {
         this.team = team;
     }
+
+    @Override
+    public String toString() {
+        return "Member{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", team=" + team + // team 에서 member 도 호출해서 무한루프 돈다.
+                '}';
+    }
 }

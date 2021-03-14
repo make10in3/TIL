@@ -45,4 +45,13 @@ public class Team {
         member.setTeam(this);
         members.add(member);
     }
+
+    @Override
+    public String toString() {
+        return "Team{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", members=" + members +  // 계속호출해서 무한 루프 돈다.
+                '}';
+    }
 }
