@@ -15,16 +15,20 @@ public class JpaMain {
         tx.begin();
 
         try {
-            // 연관 관계의 주인에 값을 입력하지 않음
-            Member member = new Member();
-            member.setUsername("member1");
-            em.persist(member);
-
+            // 순수한 객체 관계를 고려하면 항상 양쪽다 값을 입력해야한다.
             Team team = new Team();
             team.setName("TEAM A");
-            team.getMembers().add(member);
             em.persist(team);
 
+            Member member = new Member();
+            member.setUsername("member1");
+            member.setTeam(team); //1
+            em.persist(member);
+
+            team.getMembers().add(member); //2
+
+            em.flush();
+            em.clear();
 
             tx.commit();
         } catch (Exception e) {
