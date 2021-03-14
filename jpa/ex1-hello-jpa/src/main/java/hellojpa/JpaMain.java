@@ -30,11 +30,19 @@ public class JpaMain {
 
             Member findMember = em.find(Member.class, member.getId());
             Team findTeam = findMember.getTeam();
-            System.out.println(findTeam);
+            System.out.println(findTeam.getName());
 
             // 새로운 팀으로 설정하고 싶을 때
             Team newTeam = em.find(Team.class, 100L);
             findMember.setTeam(newTeam);
+
+            // 양방향 연관 관계 설정
+            List<Member> members = findMember.getTeam().getMembers();
+
+            for (Member m: members){
+                System.out.println("m = " + m.getUsername());
+            }
+
 
             tx.commit();
         } catch (Exception e) {
