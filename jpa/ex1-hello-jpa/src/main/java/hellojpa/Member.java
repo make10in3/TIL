@@ -45,4 +45,8 @@ public class Member {
         this.team = team;
         team.getMembers().add(this); // 나자신의 인스턴스를 넣어줌
     }
+
+    public void setTeam(Team team) {
+        this.team = team;
+    }
 }

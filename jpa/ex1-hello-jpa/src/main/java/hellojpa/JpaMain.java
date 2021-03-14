@@ -22,10 +22,9 @@ public class JpaMain {
 
             Member member = new Member();
             member.setUsername("member1");
-            member.changeTeam(team); // 멤버에 팀 정보를 넣는 방법
             em.persist(member);
 
-            //team.getMembers().add(member);
+            team.addMember(member);
 
             em.flush();
             em.clear();
