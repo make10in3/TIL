@@ -14,11 +14,6 @@ public class Member {
     @Column(name="USERNAME")
     private String username;
 
-    // 다대일 관계
-    @ManyToOne
-    @JoinColumn(name="TEAM_ID")
-    private Team team;
-
     public Long getId() {
         return id;
     }
@@ -35,25 +30,4 @@ public class Member {
         this.username = username;
     }
 
-    public Team getTeam() {
-        return team;
-    }
-
-    public void changeTeam(Team team) {
-        this.team = team;
-        team.getMembers().add(this); // 나자신의 인스턴스를 넣어줌
-    }
-
-    public void setTeam(Team team) {
-        this.team = team;
-    }
-
-    @Override
-    public String toString() {
-        return "Member{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", team=" + team + // team 에서 member 도 호출해서 무한루프 돈다.
-                '}';
-    }
 }
