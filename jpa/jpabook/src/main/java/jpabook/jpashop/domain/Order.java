@@ -17,14 +17,17 @@ public class Order {
     @JoinColumn(name="MEMBER_ID")
     private Member member;
 
-    // 비즈니스적으로 의미 있음, 많이 사용함.
     @OneToMany(mappedBy = "order")
     private List<OrderItem> orderItems = new ArrayList<>();
 
-
     private LocalDateTime orderDate;
+
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
+
+    @OneToOne
+    @JoinColumn(name="DELIVERY_ID")
+    private Delivery delivery;
 
     public Member getMember() {
         return member;
