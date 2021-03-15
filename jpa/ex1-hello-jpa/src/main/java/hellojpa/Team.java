@@ -12,8 +12,7 @@ public class Team {
     private Long id;
     private String name;
 
-    // 컬렉션 추가
-    // Member 엔티티의 team 과 연결되어 있음
+    // 다대일 관계
     @OneToMany(mappedBy = "team")
     private List<Member> members = new ArrayList<>();
 
