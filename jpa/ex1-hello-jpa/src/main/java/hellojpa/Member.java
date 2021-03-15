@@ -20,6 +20,11 @@ public class Member {
     @JoinColumn(name="TEAM_ID", insertable = false, updatable = false)
     private Team team;
 
+    // 일대일 양방향
+    @OneToOne
+    @JoinColumn(name="LOCKER_ID")
+    private Locker locker;
+
     public Long getId() {
         return id;
     }
