@@ -1,11 +1,13 @@
 package hellojpa;
+import sun.util.resources.LocaleData;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
-public class Member {
+public class Member extends BaseEntity{
 
     @Id @GeneratedValue
     @Column(name="Member_ID")
@@ -21,9 +23,11 @@ public class Member {
     private Team team;
 
     // 일대일 양방향
-    @OneToOne
-    @JoinColumn(name="LOCKER_ID")
-    private Locker locker;
+    //@OneToOne
+    //@JoinColumn(name="LOCKER_ID")
+    //private Locker locker;
+
+
 
     public Long getId() {
         return id;

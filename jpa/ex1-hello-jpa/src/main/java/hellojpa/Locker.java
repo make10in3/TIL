@@ -5,15 +5,15 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
-@Entity
+//@Entity
 public class Locker {
-    @Id @GeneratedValue
+    //@Id @GeneratedValue
     private Long id;
     private String name;
 
     // 일대일 연관관계
     // 읽기 전용
-    @OneToOne(mappedBy = "locker")
+    //@OneToOne(mappedBy = "locker")
     private Member member;
 
     public Long getId() {

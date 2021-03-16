@@ -14,21 +14,13 @@ public class JpaMain {
         tx.begin();
 
         try {
-            Movie movie = new Movie();
-            movie.setDirector("봉준호");
-            movie.setActor("우식이");
-            movie.setName("기생충");
-            movie.setPrice(10000);
-            System.out.println(movie.getId());
+            Member member = new Member();
+            member.setCreateBy("kim");
 
-            em.persist(movie);
+            em.persist(member);
 
             em.flush();
             em.clear();
-            System.out.println(movie.getId());
-
-            Movie findMovie = em.find(Movie.class, movie.getId());
-            System.out.println("findMovie=" + findMovie);
 
             tx.commit();
         } catch (Exception e) {
