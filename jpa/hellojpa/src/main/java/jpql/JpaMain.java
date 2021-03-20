@@ -16,9 +16,9 @@ public class JpaMain {
             member.setUsername("member1");
             em.persist(member);
 
-            TypedQuery<Member> query1 = em.createQuery("select m from Member m where m.username = :username", Member.class);
-            query1.setParameter("username", "member1");
-            Member singleResult = query1.getSingleResult();
+            Member singleResult = em.createQuery("select m from Member m where m.username = :username", Member.class).
+                    setParameter("username", "member1").
+                    getSingleResult();
             System.out.println("singleResult = " + singleResult.getUsername());
 
             tx.commit();
