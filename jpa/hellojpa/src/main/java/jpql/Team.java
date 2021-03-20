@@ -10,7 +10,8 @@ public class Team {
     @Id @GeneratedValue
     @Column(name="TEAM_ID")
     private Long id;
-    private String username;
+    private String name;
+
 
     @OneToMany(mappedBy = "team")
     private List<Member> members = new ArrayList<>();
@@ -23,12 +24,12 @@ public class Team {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getName() {
+        return name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public List<Member> getMembers() {
