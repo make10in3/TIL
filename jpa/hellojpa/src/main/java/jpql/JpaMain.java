@@ -1,6 +1,7 @@
 package jpql;
 
 import javax.persistence.*;
+import java.util.List;
 
 public class JpaMain {
     public static void main(String[] args) {
@@ -16,9 +17,19 @@ public class JpaMain {
             em.persist(member);
 
             TypedQuery<Member> query1 = em.createQuery("select m from Member m", Member.class);
-            TypedQuery<String> query2 = em.createQuery("select m.username from Member m", String.class);
-            Query query3 = em.createQuery("select m.username, m.age from Member m");
-            
+            List<Member> resultList = query1.getResultList();
+
+            for (Member member1 : resultList) {
+                System.out.println("member1 = " + member1);
+            }
+
+            TypedQuery<Member> query = em.createQuery("select m from Member m where m.id=2L", Member.class);
+            Member result = query.getSingleResult();
+            // Spring Data JPA -> 결과가 없으면 EXCEPTION 터지는 것을 보완
+            // 지금 이 코드는 표준 스펙
+            System.out.println("result = " + result);
+
+
             tx.commit();
 
         } catch(Exception e) {
