@@ -2,39 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4133d2e5-2ced-4fb4-972b-f5279cae9506" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ex1-hello-jpa/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hellojpa/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hellojpa/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hellojpa/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hellojpa/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hellojpa/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hellojpa/hellojpa.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hellojpa/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_200.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_22_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_4_22_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_1_3_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpabook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jpabook.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hellojpa/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hellojpa/src/main/java/jpql/JpaMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hellojpa/src/main/java/jpql/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hellojpa/src/main/java/jpql/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hellojpa/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hellojpa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +88,7 @@
       <workItem from="1615734293378" duration="2025000" />
       <workItem from="1615789397648" duration="3066000" />
       <workItem from="1615909772299" duration="2037000" />
-      <workItem from="1615978563129" duration="2588000" />
+      <workItem from="1615978563129" duration="3736000" />
     </task>
     <servers />
   </component>
@@ -130,22 +104,22 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="709" y="251" key="#com.intellij.ide.util.MemberChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1616059569113" />
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1616059607786">
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1616221154092">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1616059607786" />
-    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1616059607785">
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1616221154092" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1616221154091">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1616059607785" />
-    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1616059607784">
+    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1616221154091" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1616221154091">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1616059607784" />
-    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1616059607785">
+    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1616221154091" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1616221154091">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1616059607785" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1616221154091" />
     <state x="264" y="223" key="new project wizard" timestamp="1616218979415">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
