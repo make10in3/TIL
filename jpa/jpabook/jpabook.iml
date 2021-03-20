@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <module type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="jpa" name="JPA">
@@ -12,4 +13,8 @@
       </configuration>
     </facet>
   </component>
+=======
+<module version="4">
+  <component name="ExternalSystem" externalSystem="Maven" />
+>>>>>>> jpql/#40
 </module>

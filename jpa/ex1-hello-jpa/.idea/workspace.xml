@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="59bb7ba5-03bc-4a24-96f3-c861926847bc" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1pYLICWF0h2LwydemTTAIHGwStS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.30114943" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="hellojpa" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
+      <recent name="$PROJECT_DIR$/../../../7_github/TIL/jpa" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="JpaMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hellojpa.JpaMain" />
+      <module name="ex1-hello-jpa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hellojpa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JpaMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59bb7ba5-03bc-4a24-96f3-c861926847bc" name="Default Changelist" comment="" />
+      <created>1615354994652</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615354994652</updated>
+      <workItem from="1615354995817" duration="677000" />
+      <workItem from="1615355753522" duration="11191000" />
+      <workItem from="1615633068027" duration="4684000" />
+      <workItem from="1615650253141" duration="146000" />
+      <workItem from="1615717713539" duration="9321000" />
+      <workItem from="1615772538103" duration="2060000" />
+      <workItem from="1615778229367" duration="2416000" />
+      <workItem from="1615882082575" duration="5570000" />
+      <workItem from="1615911206517" duration="93000" />
+      <workItem from="1615958940574" duration="3107000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="384" y="153" key="#Project_Structure" timestamp="1615355536881">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="384" y="153" key="#Project_Structure/0.23.1792.1097@0.23.1792.1097" timestamp="1615355536881" />
+    <state x="709" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1615977787389">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="709" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1615977787389" />
+    <state x="709" y="262" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1097@0.23.1792.1097" timestamp="1615374728418" />
+    <state x="634" y="314" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615633963805">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="634" y="314" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1615633963805" />
+    <state width="1750" height="317" key="GridCell.Tab.0.bottom" timestamp="1615978561824">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="317" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1615978561824" />
+    <state width="1750" height="303" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1615631622681" />
+    <state width="1750" height="317" key="GridCell.Tab.0.center" timestamp="1615978561823">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="317" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1615978561823" />
+    <state width="1750" height="303" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1615631622680" />
+    <state width="1750" height="317" key="GridCell.Tab.0.left" timestamp="1615978561823">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="317" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1615978561823" />
+    <state width="1750" height="303" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1615631622680" />
+    <state width="1750" height="317" key="GridCell.Tab.0.right" timestamp="1615978561823">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="317" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1615978561823" />
+    <state width="1750" height="303" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1615631622680" />
+    <state x="264" y="223" key="new project wizard" timestamp="1615650218192">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="264" y="223" key="new project wizard/0.0.1792.1120@0.0.1792.1120" timestamp="1615650218192" />
+    <state x="561" y="266" key="run.anything.popup" timestamp="1615355718381">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="561" y="266" key="run.anything.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1615355718381" />
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1615976772182">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1615976772182" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java</url>
+          <line>10</line>
+          <properties class="hellojpa.JpaMain">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
