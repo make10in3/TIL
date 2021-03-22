@@ -38,7 +38,9 @@ public class JpaMain {
             em.flush();
             em.clear();
 
-            String query = "select m from Member m";
+
+            // 영속성 컨텍스트에 미리 담아 둘수있음
+            String query = "select m from Member m join fetch m.team t";
 
             List<Member> result = em.createQuery(query, Member.class)
                     .getResultList();
@@ -46,12 +48,6 @@ public class JpaMain {
                 System.out.println("member = " + member);
                 System.out.println("member.getTeam().getName() = " + member.getTeam().getName());
             }
-
-            // 지연로딩 때문에 호출될 떄마다 쿼리문 날림
-            // 회원1, 팀A(SQL)
-            // 회원2, 팀A(1차캐시)
-            // 회원3, 팀B(SQL)
-            // 회원 100명 -> N+1 조회 -> 성능 문제
 
             tx.commit();
 
