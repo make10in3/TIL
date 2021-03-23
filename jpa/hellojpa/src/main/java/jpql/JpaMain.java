@@ -37,11 +37,17 @@ public class JpaMain {
 
             em.flush();
             em.clear();
+            
 
+<<<<<<< HEAD
 
             // 영속성 컨텍스트에 미리 담아 둘수있음
             String query = "select m from Member m join fetch m.team t";
 
+=======
+            // 영속성 컨텍스트에 미리 담아 둘수있음
+            String query = "select m from Member m join fetch m.team t";
+>>>>>>> main
             List<Member> result = em.createQuery(query, Member.class)
                     .getResultList();
             for (Member member : result) {
@@ -49,6 +55,10 @@ public class JpaMain {
                 System.out.println("member.getTeam().getName() = " + member.getTeam().getName());
             }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
             tx.commit();
 
         } catch(Exception e) {
