@@ -37,17 +37,14 @@ public class JpaMain {
 
             em.flush();
             em.clear();
-            
 
-<<<<<<< HEAD
 
             // 영속성 컨텍스트에 미리 담아 둘수있음
-            String query = "select m from Member m join fetch m.team t";
+            String query = "select t from Team t";
 
-=======
-            // 영속성 컨텍스트에 미리 담아 둘수있음
-            String query = "select m from Member m join fetch m.team t";
->>>>>>> main
+            // lazy loading 으로 루프 안에서 각각 쿼리를 날리기 때문에 성능이 안나옴
+            // 해결 방법1 : 해당 컬렉션 @BatchSize(size=100)
+            // 해결 방법2 : 글로벌 세팅 persistence.xml  - <property name="hibernate.default_batch_fetch_size" value="100"/>
             List<Member> result = em.createQuery(query, Member.class)
                     .getResultList();
             for (Member member : result) {
@@ -55,10 +52,6 @@ public class JpaMain {
                 System.out.println("member.getTeam().getName() = " + member.getTeam().getName());
             }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> main
             tx.commit();
 
         } catch(Exception e) {
