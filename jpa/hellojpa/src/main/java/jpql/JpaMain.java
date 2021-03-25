@@ -1,6 +1,7 @@
 package jpql;
 
 import javax.persistence.*;
+import java.util.Arrays;
 import java.util.List;
 
 public class JpaMain {
@@ -38,13 +39,19 @@ public class JpaMain {
             em.flush();
             em.clear();
 
-            List<Member> resultList = em.createNamedQuery("Member.findByUsername", Member.class)
-                    .setParameter("username", "회원1")
-                    .getResultList();
+            String sql = "update Member m set m.age = 20";
 
-            for (Member member : resultList) {
-                System.out.println("member = " + member);
-            }
+            //FLUSH
+            int resultCount = em.createQuery(sql)
+                    .executeUpdate();
+        
+            System.out.println("resultCount = " + resultCount);
+
+            // 벌크 연산 수행 후 영속성 컨텍스트 초기화하기
+            em.clear();
+
+            Member findMember = em.find(Member.class, member1.getId());
+            System.out.println("member1.getAge() = " + findMember.getAge());
 
             tx.commit();
 
